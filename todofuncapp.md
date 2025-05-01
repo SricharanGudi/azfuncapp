@@ -1,11 +1,11 @@
 
-# 🚀 Azure Function App Deployment Guide (VS Code)
+# Azure Function App Deployment Guide (VS Code)
 
-This guide walks you through the **step-by-step process** to create a Python-based Azure Function App and deploy it to **Azure** using **Visual Studio Code (VS Code)**.
+ create a Python-based Azure Function App and deploy it to **Azure** using **Visual Studio Code (VS Code)**.
 
 ---
 
-## ✅ Prerequisites
+## Prerequisites
 
 Before starting, ensure the following are installed:
 
@@ -21,7 +21,7 @@ Before starting, ensure the following are installed:
 
 ---
 
-## 1️⃣ Sign In to Azure
+## 1 Sign In to Azure
 
 ```bash
 # Sign in using Azure CLI
@@ -36,7 +36,7 @@ az login
 
 ---
 
-## 2️⃣ Create a Python Azure Function App (Locally)
+## 2 Create a Python Azure Function App (Locally)
 
 ```bash
 # Create a function app project
@@ -50,7 +50,7 @@ func new
 
 ---
 
-## 3️⃣ Run & Test Your App Locally
+## 3 Run & Test Your App Locally
 
 ```bash
 # Start local server
@@ -65,7 +65,7 @@ http://localhost:7071/api/TodoFunction
 
 ---
 
-## 4️⃣ Create Azure Resources (Optional)
+## 4 Create Azure Resources (Optional)
 
 You’ll need:
 
@@ -82,7 +82,7 @@ az functionapp create --resource-group myResourceGroup --consumption-plan-locati
 
 ---
 
-## 5️⃣ Deploy to Azure from VS Code
+## 5 Deploy to Azure from VS Code
 
 1. Open the **Azure tab** in VS Code.
 2. Click the **“Deploy to Function App…”** icon (cloud with up arrow).
@@ -98,7 +98,7 @@ az functionapp create --resource-group myResourceGroup --consumption-plan-locati
 
 ---
 
-## 6️⃣ Get the Function URL
+## 6 Get the Function URL
 
 In the Azure portal:
 
@@ -114,7 +114,7 @@ https://todo-charan-func.azurewebsites.net/api/TodoFunction
 
 ---
 
-## 7️⃣ Test Function App (Deployed)
+## 7 Test Function App (Deployed)
 
 Using Postman:
 
@@ -133,7 +133,7 @@ Hello, Sricharan. This HTTP triggered function executed successfully.
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 
 ```bash
 my-function-app/
@@ -146,7 +146,7 @@ my-function-app/
 
 ---
 
-## 📌 Useful CLI Commands
+## Useful CLI Commands
 
 ```bash
 # Login to Azure
@@ -167,4 +167,4 @@ func azure functionapp publish todo-charan-func
 
 ---
 
-> Created with ❤️ by Sricharan
+> by Sricharan
